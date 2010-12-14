@@ -1,0 +1,396 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 45;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1D3623260D0F684500981E51 /* ParserExampleAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* ParserExampleAppDelegate.m */; };
+		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
+		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
+		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
+		28860BE50F44EE6400985440 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28860BE40F44EE6400985440 /* CoreData.framework */; };
+		2892E4100DC94CBA00A64D0F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2892E40F0DC94CBA00A64D0F /* CoreGraphics.framework */; };
+		2899E5600DE3E45000AC0155 /* RootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2899E55F0DE3E45000AC0155 /* RootViewController.xib */; };
+		28AD73600D9D9599002E5188 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28AD735F0D9D9599002E5188 /* MainWindow.xib */; };
+		28C286E10D94DF7D0034E888 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28C286E00D94DF7D0034E888 /* RootViewController.m */; };
+		28D3F202112F7DC200FD0661 /* ParserExample.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 28D3F201112F7DC200FD0661 /* ParserExample.xcdatamodeld */; };
+		386381BC12B7DF36000EE66E /* AQXMLParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 386381B512B7DF36000EE66E /* AQXMLParser.m */; };
+		386381BD12B7DF36000EE66E /* AQXMLParserDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 386381B712B7DF36000EE66E /* AQXMLParserDelegate.m */; };
+		386381BE12B7DF36000EE66E /* AQXMLParserInternal.m in Sources */ = {isa = PBXBuildFile; fileRef = 386381B912B7DF36000EE66E /* AQXMLParserInternal.m */; };
+		386381BF12B7DF36000EE66E /* AQXMLParserWithTimeout.m in Sources */ = {isa = PBXBuildFile; fileRef = 386381BB12B7DF36000EE66E /* AQXMLParserWithTimeout.m */; };
+		386381C812B7DF41000EE66E /* HTTPAuthentication.m in Sources */ = {isa = PBXBuildFile; fileRef = 386381C212B7DF41000EE66E /* HTTPAuthentication.m */; };
+		386381C912B7DF41000EE66E /* HTTPMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 386381C412B7DF41000EE66E /* HTTPMessage.m */; };
+		386381CA12B7DF41000EE66E /* NSStream+HTTPMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 386381C712B7DF41000EE66E /* NSStream+HTTPMessage.m */; };
+		386381D212B7DF50000EE66E /* _AQGzipStreamInternal.m in Sources */ = {isa = PBXBuildFile; fileRef = 386381CD12B7DF50000EE66E /* _AQGzipStreamInternal.m */; };
+		386381D312B7DF50000EE66E /* AQGzipFileStream.m in Sources */ = {isa = PBXBuildFile; fileRef = 386381CE12B7DF50000EE66E /* AQGzipFileStream.m */; };
+		386381D412B7DF50000EE66E /* AQGzipInputStream.m in Sources */ = {isa = PBXBuildFile; fileRef = 386381CF12B7DF50000EE66E /* AQGzipInputStream.m */; };
+		386381D512B7DF50000EE66E /* AQGzipOutputStream.m in Sources */ = {isa = PBXBuildFile; fileRef = 386381D012B7DF50000EE66E /* AQGzipOutputStream.m */; };
+		386381E612B7E367000EE66E /* TumblrParserDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 386381E512B7E367000EE66E /* TumblrParserDelegate.m */; };
+		386381FD12B7EEB5000EE66E /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 386381FC12B7EEB5000EE66E /* libxml2.dylib */; };
+		3863821212B7EF40000EE66E /* NSError+CFStreamError.m in Sources */ = {isa = PBXBuildFile; fileRef = 3863821112B7EF40000EE66E /* NSError+CFStreamError.m */; };
+		3863821D12B7EF7F000EE66E /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3863821C12B7EF7F000EE66E /* CFNetwork.framework */; };
+		3863823012B7EF8F000EE66E /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 3863822F12B7EF8F000EE66E /* libz.dylib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		1D3623240D0F684500981E51 /* ParserExampleAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParserExampleAppDelegate.h; sourceTree = "<group>"; };
+		1D3623250D0F684500981E51 /* ParserExampleAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ParserExampleAppDelegate.m; sourceTree = "<group>"; };
+		1D6058910D05DD3D006BFB54 /* ParserExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ParserExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		28860B760F44E54D00985440 /* ParserExample.xcdatamodel */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = wrapper.xcdatamodel; path = ParserExample.xcdatamodel; sourceTree = "<group>"; };
+		28860BE40F44EE6400985440 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		2892E40F0DC94CBA00A64D0F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		2899E55F0DE3E45000AC0155 /* RootViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RootViewController.xib; sourceTree = "<group>"; };
+		28A0AAE50D9B0CCF005BE974 /* ParserExample_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParserExample_Prefix.pch; sourceTree = "<group>"; };
+		28AD735F0D9D9599002E5188 /* MainWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainWindow.xib; sourceTree = "<group>"; };
+		28C286DF0D94DF7D0034E888 /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
+		28C286E00D94DF7D0034E888 /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
+		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		386381B412B7DF36000EE66E /* AQXMLParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AQXMLParser.h; sourceTree = "<group>"; };
+		386381B512B7DF36000EE66E /* AQXMLParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AQXMLParser.m; sourceTree = "<group>"; };
+		386381B612B7DF36000EE66E /* AQXMLParserDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AQXMLParserDelegate.h; sourceTree = "<group>"; };
+		386381B712B7DF36000EE66E /* AQXMLParserDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AQXMLParserDelegate.m; sourceTree = "<group>"; };
+		386381B812B7DF36000EE66E /* AQXMLParserInternal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AQXMLParserInternal.h; sourceTree = "<group>"; };
+		386381B912B7DF36000EE66E /* AQXMLParserInternal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AQXMLParserInternal.m; sourceTree = "<group>"; };
+		386381BA12B7DF36000EE66E /* AQXMLParserWithTimeout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AQXMLParserWithTimeout.h; sourceTree = "<group>"; };
+		386381BB12B7DF36000EE66E /* AQXMLParserWithTimeout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AQXMLParserWithTimeout.m; sourceTree = "<group>"; };
+		386381C112B7DF41000EE66E /* HTTPAuthentication.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTTPAuthentication.h; sourceTree = "<group>"; };
+		386381C212B7DF41000EE66E /* HTTPAuthentication.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTTPAuthentication.m; sourceTree = "<group>"; };
+		386381C312B7DF41000EE66E /* HTTPMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTTPMessage.h; sourceTree = "<group>"; };
+		386381C412B7DF41000EE66E /* HTTPMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTTPMessage.m; sourceTree = "<group>"; };
+		386381C512B7DF41000EE66E /* HTTPMessageInternalAccess.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTTPMessageInternalAccess.h; sourceTree = "<group>"; };
+		386381C612B7DF41000EE66E /* NSStream+HTTPMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSStream+HTTPMessage.h"; sourceTree = "<group>"; };
+		386381C712B7DF41000EE66E /* NSStream+HTTPMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSStream+HTTPMessage.m"; sourceTree = "<group>"; };
+		386381CC12B7DF50000EE66E /* _AQGzipStreamInternal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _AQGzipStreamInternal.h; sourceTree = "<group>"; };
+		386381CD12B7DF50000EE66E /* _AQGzipStreamInternal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _AQGzipStreamInternal.m; sourceTree = "<group>"; };
+		386381CE12B7DF50000EE66E /* AQGzipFileStream.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AQGzipFileStream.m; sourceTree = "<group>"; };
+		386381CF12B7DF50000EE66E /* AQGzipInputStream.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AQGzipInputStream.m; sourceTree = "<group>"; };
+		386381D012B7DF50000EE66E /* AQGzipOutputStream.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AQGzipOutputStream.m; sourceTree = "<group>"; };
+		386381D112B7DF50000EE66E /* AQGzipStream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AQGzipStream.h; sourceTree = "<group>"; };
+		386381E412B7E367000EE66E /* TumblrParserDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TumblrParserDelegate.h; sourceTree = "<group>"; };
+		386381E512B7E367000EE66E /* TumblrParserDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TumblrParserDelegate.m; sourceTree = "<group>"; };
+		386381FC12B7EEB5000EE66E /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
+		3863820212B7EEE4000EE66E /* iPhoneNonatomic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iPhoneNonatomic.h; sourceTree = "<group>"; };
+		3863821012B7EF40000EE66E /* NSError+CFStreamError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSError+CFStreamError.h"; sourceTree = "<group>"; };
+		3863821112B7EF40000EE66E /* NSError+CFStreamError.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSError+CFStreamError.m"; sourceTree = "<group>"; };
+		3863821C12B7EF7F000EE66E /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		3863822F12B7EF8F000EE66E /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		8D1107310486CEB800E47090 /* ParserExample-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "ParserExample-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1D60588F0D05DD3D006BFB54 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */,
+				1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */,
+				2892E4100DC94CBA00A64D0F /* CoreGraphics.framework in Frameworks */,
+				28860BE50F44EE6400985440 /* CoreData.framework in Frameworks */,
+				386381FD12B7EEB5000EE66E /* libxml2.dylib in Frameworks */,
+				3863821D12B7EF7F000EE66E /* CFNetwork.framework in Frameworks */,
+				3863823012B7EF8F000EE66E /* libz.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		080E96DDFE201D6D7F000001 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				28C286DF0D94DF7D0034E888 /* RootViewController.h */,
+				28C286E00D94DF7D0034E888 /* RootViewController.m */,
+				1D3623240D0F684500981E51 /* ParserExampleAppDelegate.h */,
+				1D3623250D0F684500981E51 /* ParserExampleAppDelegate.m */,
+				386381E412B7E367000EE66E /* TumblrParserDelegate.h */,
+				386381E512B7E367000EE66E /* TumblrParserDelegate.m */,
+				3863820212B7EEE4000EE66E /* iPhoneNonatomic.h */,
+				3863821012B7EF40000EE66E /* NSError+CFStreamError.h */,
+				3863821112B7EF40000EE66E /* NSError+CFStreamError.m */,
+				386381B312B7DF36000EE66E /* StreamingXMLParser */,
+				386381C012B7DF41000EE66E /* HTTPMessage */,
+				386381CB12B7DF50000EE66E /* Compression */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		19C28FACFE9D520D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1D6058910D05DD3D006BFB54 /* ParserExample.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
+			isa = PBXGroup;
+			children = (
+				080E96DDFE201D6D7F000001 /* Classes */,
+				29B97315FDCFA39411CA2CEA /* Other Sources */,
+				29B97317FDCFA39411CA2CEA /* Resources */,
+				29B97323FDCFA39411CA2CEA /* Frameworks */,
+				19C28FACFE9D520D11CA2CBB /* Products */,
+			);
+			name = CustomTemplate;
+			sourceTree = "<group>";
+		};
+		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				28A0AAE50D9B0CCF005BE974 /* ParserExample_Prefix.pch */,
+				29B97316FDCFA39411CA2CEA /* main.m */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		29B97317FDCFA39411CA2CEA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				28D3F201112F7DC200FD0661 /* ParserExample.xcdatamodeld */,
+				2899E55F0DE3E45000AC0155 /* RootViewController.xib */,
+				28AD735F0D9D9599002E5188 /* MainWindow.xib */,
+				8D1107310486CEB800E47090 /* ParserExample-Info.plist */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1DF5F4DF0D08C38300B7A737 /* UIKit.framework */,
+				1D30AB110D05D00D00671497 /* Foundation.framework */,
+				2892E40F0DC94CBA00A64D0F /* CoreGraphics.framework */,
+				28860BE40F44EE6400985440 /* CoreData.framework */,
+				3863821C12B7EF7F000EE66E /* CFNetwork.framework */,
+				386381FC12B7EEB5000EE66E /* libxml2.dylib */,
+				3863822F12B7EF8F000EE66E /* libz.dylib */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		386381B312B7DF36000EE66E /* StreamingXMLParser */ = {
+			isa = PBXGroup;
+			children = (
+				386381B412B7DF36000EE66E /* AQXMLParser.h */,
+				386381B512B7DF36000EE66E /* AQXMLParser.m */,
+				386381B612B7DF36000EE66E /* AQXMLParserDelegate.h */,
+				386381B712B7DF36000EE66E /* AQXMLParserDelegate.m */,
+				386381B812B7DF36000EE66E /* AQXMLParserInternal.h */,
+				386381B912B7DF36000EE66E /* AQXMLParserInternal.m */,
+				386381BA12B7DF36000EE66E /* AQXMLParserWithTimeout.h */,
+				386381BB12B7DF36000EE66E /* AQXMLParserWithTimeout.m */,
+			);
+			path = StreamingXMLParser;
+			sourceTree = "<group>";
+		};
+		386381C012B7DF41000EE66E /* HTTPMessage */ = {
+			isa = PBXGroup;
+			children = (
+				386381C112B7DF41000EE66E /* HTTPAuthentication.h */,
+				386381C212B7DF41000EE66E /* HTTPAuthentication.m */,
+				386381C312B7DF41000EE66E /* HTTPMessage.h */,
+				386381C412B7DF41000EE66E /* HTTPMessage.m */,
+				386381C512B7DF41000EE66E /* HTTPMessageInternalAccess.h */,
+				386381C612B7DF41000EE66E /* NSStream+HTTPMessage.h */,
+				386381C712B7DF41000EE66E /* NSStream+HTTPMessage.m */,
+			);
+			path = HTTPMessage;
+			sourceTree = "<group>";
+		};
+		386381CB12B7DF50000EE66E /* Compression */ = {
+			isa = PBXGroup;
+			children = (
+				386381CC12B7DF50000EE66E /* _AQGzipStreamInternal.h */,
+				386381CD12B7DF50000EE66E /* _AQGzipStreamInternal.m */,
+				386381CE12B7DF50000EE66E /* AQGzipFileStream.m */,
+				386381CF12B7DF50000EE66E /* AQGzipInputStream.m */,
+				386381D012B7DF50000EE66E /* AQGzipOutputStream.m */,
+				386381D112B7DF50000EE66E /* AQGzipStream.h */,
+			);
+			path = Compression;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1D6058900D05DD3D006BFB54 /* ParserExample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "ParserExample" */;
+			buildPhases = (
+				1D60588D0D05DD3D006BFB54 /* Resources */,
+				1D60588E0D05DD3D006BFB54 /* Sources */,
+				1D60588F0D05DD3D006BFB54 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ParserExample;
+			productName = ParserExample;
+			productReference = 1D6058910D05DD3D006BFB54 /* ParserExample.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29B97313FDCFA39411CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "ParserExample" */;
+			compatibilityVersion = "Xcode 3.1";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+				en,
+			);
+			mainGroup = 29B97314FDCFA39411CA2CEA /* CustomTemplate */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1D6058900D05DD3D006BFB54 /* ParserExample */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1D60588D0D05DD3D006BFB54 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28AD73600D9D9599002E5188 /* MainWindow.xib in Resources */,
+				2899E5600DE3E45000AC0155 /* RootViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1D60588E0D05DD3D006BFB54 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
+				1D3623260D0F684500981E51 /* ParserExampleAppDelegate.m in Sources */,
+				28C286E10D94DF7D0034E888 /* RootViewController.m in Sources */,
+				28D3F202112F7DC200FD0661 /* ParserExample.xcdatamodeld in Sources */,
+				386381BC12B7DF36000EE66E /* AQXMLParser.m in Sources */,
+				386381BD12B7DF36000EE66E /* AQXMLParserDelegate.m in Sources */,
+				386381BE12B7DF36000EE66E /* AQXMLParserInternal.m in Sources */,
+				386381BF12B7DF36000EE66E /* AQXMLParserWithTimeout.m in Sources */,
+				386381C812B7DF41000EE66E /* HTTPAuthentication.m in Sources */,
+				386381C912B7DF41000EE66E /* HTTPMessage.m in Sources */,
+				386381CA12B7DF41000EE66E /* NSStream+HTTPMessage.m in Sources */,
+				386381D212B7DF50000EE66E /* _AQGzipStreamInternal.m in Sources */,
+				386381D312B7DF50000EE66E /* AQGzipFileStream.m in Sources */,
+				386381D412B7DF50000EE66E /* AQGzipInputStream.m in Sources */,
+				386381D512B7DF50000EE66E /* AQGzipOutputStream.m in Sources */,
+				386381E612B7E367000EE66E /* TumblrParserDelegate.m in Sources */,
+				3863821212B7EF40000EE66E /* NSError+CFStreamError.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		1D6058940D05DD3E006BFB54 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = ParserExample_Prefix.pch;
+				HEADER_SEARCH_PATHS = /usr/include/libxml2;
+				INFOPLIST_FILE = "ParserExample-Info.plist";
+				PRODUCT_NAME = ParserExample;
+			};
+			name = Debug;
+		};
+		1D6058950D05DD3E006BFB54 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = ParserExample_Prefix.pch;
+				HEADER_SEARCH_PATHS = /usr/include/libxml2;
+				INFOPLIST_FILE = "ParserExample-Info.plist";
+				PRODUCT_NAME = ParserExample;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C01FCF4F08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				PREBINDING = NO;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		C01FCF5008A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				PREBINDING = NO;
+				SDKROOT = iphoneos;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "ParserExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1D6058940D05DD3E006BFB54 /* Debug */,
+				1D6058950D05DD3E006BFB54 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "ParserExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4F08A954540054247B /* Debug */,
+				C01FCF5008A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		28D3F201112F7DC200FD0661 /* ParserExample.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				28860B760F44E54D00985440 /* ParserExample.xcdatamodel */,
+			);
+			currentVersion = 28860B760F44E54D00985440 /* ParserExample.xcdatamodel */;
+			path = ParserExample.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
+}
