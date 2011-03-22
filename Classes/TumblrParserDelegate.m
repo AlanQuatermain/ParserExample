@@ -118,6 +118,8 @@ static inline NSManagedObject * TagWithName( NSString * name )
     [self.tumblog setValue: [attrs objectForKey: @"name"] forKey: @"name"];
     [self.tumblog setValue: [attrs objectForKey: @"title"] forKey: @"title"];
     [self.tumblog setValue: [attrs objectForKey: @"timezone"] forKey: @"timezone"];
+	
+	[self.managedObjectContext save: NULL];
 }
 
 - (void) startPostWithAttributes: (NSDictionary *) attrs
@@ -153,6 +155,12 @@ static inline NSManagedObject * TagWithName( NSString * name )
         NSLog( @"Exception caught in -startPostWithAttributes:, attributes = %@", attrs );
         NSLog( @"%@, %@\n%@", [e name], [e reason], [e callStackSymbols] );
     }
+}
+
+- (void) endPost
+{
+	NSAssert(self.currentPost != nil, @"End post tag found without a valid start tag");
+	[self.managedObjectContext save: NULL];
 }
 
 - (void) endTag
